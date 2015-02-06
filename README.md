@@ -1,6 +1,6 @@
 # Product Classifier
 
-[![Stories in Ready](https://badge.waffle.io/georgetown-analytics/product-classifier.png?label=ready&title=Ready)](https://waffle.io/georgetown-analytics/product-classifier)
+[![Build Status](https://travis-ci.org/georgetown-analytics/product-classifier.svg)](https://travis-ci.org/georgetown-analytics/product-classifier) [![Stories in Ready](https://badge.waffle.io/georgetown-analytics/product-classifier.png?label=ready&title=Ready)](https://waffle.io/georgetown-analytics/product-classifier)
 
 **Classify products into categories by their name with NLTK**
 
