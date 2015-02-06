@@ -24,6 +24,10 @@ Other useful text fields include the description of the product, a short, usuall
 
 Another consideration in the evaluation of a classifier is their performance given a minimum amount of information, and we would like to ensure that we use the most lightweight model possible. Whereas the product name will always be available, descriptions or keywords might be limited depending on the data source. We would like to achieve a model capable of highly accurate classifications using, if possible, the name only.
 
+## Notes
+
+This project utilizes NTLK and a Maximum Entropy model to build a classifier which can then be used as a data product in production. The data set used to train the classifier is propriertary, however a pickle containing the parameterization of the model is compressed in the `fixtures` folder. In the future, we will acquire a public data set to use and expand upon this project.
+
 ### Attribution
 
 The image used in this README, [Too Much Plaid](https://flic.kr/p/7GjgQx) by [Ewan Munro](https://www.flickr.com/photos/55935853@N00/) is licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
