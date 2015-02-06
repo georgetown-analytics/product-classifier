@@ -1,5 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/georgetown-analytics/product-classifier.png?label=ready&title=Ready)](https://waffle.io/georgetown-analytics/product-classifier)
 # Product Classifier
+
+[![Stories in Ready](https://badge.waffle.io/georgetown-analytics/product-classifier.png?label=ready&title=Ready)](https://waffle.io/georgetown-analytics/product-classifier)
 
 **Classify products into categories by their name with NLTK**
 
