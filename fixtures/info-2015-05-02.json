@@ -1,0 +1,22 @@
+{
+    "classes": {
+        "classifier": "MaxentClassifier",
+        "features": "ProductFeatures"
+    },
+    "paths": {
+        "info": "fixtures/info-2015-05-02.json",
+        "model": "fixtures/model-2015-05-02.pickle"
+    },
+    "finished": "Thu Feb 05 23:23:02 2015",
+    "version": "1.0.0",
+    "started": "Thu Feb 05 23:11:12 2015",
+    "corpus": "fixtures/products.csv",
+    "validated": true,
+    "timer": {
+        "training": 608.286406993866,
+        "validation": 56.40983510017395,
+        "build": 710.0041649341583,
+        "features": 44.22180891036987
+    },
+    "accuracy": 0.9461648558974692
+}
