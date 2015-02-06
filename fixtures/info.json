@@ -1,0 +1,22 @@
+{
+    "classes": {
+        "classifier": "MaxentClassifier",
+        "features": "ProductFeatures"
+    },
+    "paths": {
+        "info": "./info-2015-05-02.yaml",
+        "model": "./model-2015-05-02.pickle"
+    },
+    "finished": "Thu Feb 05 22:55:20 2015",
+    "version": "1.0.0",
+    "started": "Thu Feb 05 22:55:17 2015",
+    "corpus": "fixtures/prodtest.csv",
+    "validated": true,
+    "timer": {
+        "training": 0.02621603012084961,
+        "validation": 0.017329931259155273,
+        "build": 2.794337034225464,
+        "features": 2.662574052810669
+    },
+    "accuracy": 1.0
+}

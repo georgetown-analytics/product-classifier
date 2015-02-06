@@ -14,5 +14,13 @@ Classifier libraries for Apparel
 """
 
 ##########################################################################
-## Imports
+## Module Methods
 ##########################################################################
+
+__version__ = (1,0,0)
+
+def get_version():
+    """
+    Returns a string of the version
+    """
+    return ".".join(["%i" % i for i in __version__])
