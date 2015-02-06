@@ -1,0 +1,6 @@
+# Configuration file for the Baleen application
+
+debug: true
+testing: false
+corpus: /path/to/corpus.csv
+model: /path/to/model.pickle

@@ -62,3 +62,6 @@ venv
 # Fixtures
 *.csv
 *.zip
+
+# Configuration
+conf/apparel.yaml
