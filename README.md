@@ -24,6 +24,43 @@ Other useful text fields include the description of the product, a short, usuall
 
 Another consideration in the evaluation of a classifier is their performance given a minimum amount of information, and we would like to ensure that we use the most lightweight model possible. Whereas the product name will always be available, descriptions or keywords might be limited depending on the data source. We would like to achieve a model capable of highly accurate classifications using, if possible, the name only.
 
+## Quick Start
+
+In order to use this classifier, take the following steps:
+
+1. Clone the repository (assuming you haven't already)
+
+  ```bash
+  $ git clone https://github.com/georgetown-analytics/product-classifier.git
+  ```
+
+2. Move into the working directory with `cd` then install the requirements with pip.
+
+  ```bash
+  $ cd product-classifier
+  $ pip install -r requirements.txt 
+  ```
+
+3. Create a copy of the `apparel-example.yaml` in the `conf` directory to `apparel.yaml`
+
+  ```bash
+  $ cp conf/apparel-example.yaml conf/apparel.yaml
+  ```
+
+4. Modify the configuration to point to the model in the fixtures directory (currently `fixtures/model-2015-05-02.pickle`) by adding or editing the following line in the configuration:
+
+  ```yaml
+  model: fixtures/model-2015-05-02.pickle
+  ```
+
+5. At this point you should be able to use the classifier
+
+  ```bash
+  $ bin/apparel-classify.py classify --explain "North Face Fleece Jacket"
+  ```
+
+The `apparel-classify` utility also builds models, so if you have a training set as a CSV with the columns "category" and "name" (and optionally "description" and "keywords") you can then build your own model to test! 
+
 ## Notes
 
 This project utilizes NTLK and a Maximum Entropy model to build a classifier which can then be used as a data product in production. The data set used to train the classifier is propriertary, however a pickle containing the parameterization of the model is compressed in the `fixtures` folder. In the future, we will acquire a public data set to use and expand upon this project.
